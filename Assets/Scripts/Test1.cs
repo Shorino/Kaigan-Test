@@ -35,7 +35,7 @@ public class Test1 : MonoBehaviour
         currentDistanceToTarget = endPoint.transform.position.x - vehicle.transform.position.x;
         EngineState engineState = DetermineEngineState(currentDistanceToTarget, currentSpeed, forwardAcceleration, brakeDeceleration, maxSpeed);
         currentSpeed = UpdateSpeed(engineState, currentSpeed, forwardAcceleration, brakeDeceleration);
-        vehicle.transform.position = UpdatePosition(vehicle, currentSpeed);
+        UpdatePosition(vehicle, currentSpeed);
     }
     EngineState DetermineEngineState(float distanceToTarget, float currentSpeed, float forwardAcceleration, float brakeDeceleration, float maxSpeed)
     {
@@ -79,10 +79,10 @@ public class Test1 : MonoBehaviour
         }
         return currentSpeed;
     }
-    Vector3 UpdatePosition(GameObject vehicle, float currentSpeed)
+    void UpdatePosition(GameObject vehicle, float currentSpeed)
     {
-        if (currentSpeed == 0) return vehicle.transform.position;
+        if (currentSpeed == 0) return;
         float x = vehicle.transform.position.x + (currentSpeed * Time.deltaTime);
-        return new Vector3(x, vehicle.transform.position.y, vehicle.transform.position.z);
+        vehicle.transform.position = new Vector3(x, vehicle.transform.position.y, vehicle.transform.position.z);
     }
 }
