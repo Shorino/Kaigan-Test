@@ -19,7 +19,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 942
     y: -200
-    width: 3401
+    width: 2953
     height: 3377
 --- !u!114 &114350483966674976
 MonoBehaviour:
@@ -2607,7 +2607,7 @@ MonoBehaviour:
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots: []
-  m_Label: 
+  m_Label: Spawn system
   m_Data: {fileID: 8926484042661614684}
   m_InputFlowSlot:
   - link: []
@@ -5328,7 +5328,7 @@ MonoBehaviour:
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots: []
-  m_Label: 
+  m_Label: Spawn system
   m_Data: {fileID: 8926484042661614918}
   m_InputFlowSlot:
   - link: []
@@ -8697,7 +8697,7 @@ MonoBehaviour:
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots: []
-  m_Label: 
+  m_Label: Spawn system
   m_Data: {fileID: 8926484042661615027}
   m_InputFlowSlot:
   - link: []
@@ -9088,7 +9088,7 @@ MonoBehaviour:
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  title: 
+  title: Init Fireballs
   m_Owners:
   - {fileID: 8926484042661615028}
   - {fileID: 8926484042661615072}
@@ -12405,7 +12405,7 @@ MonoBehaviour:
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots: []
-  m_Label: 
+  m_Label: Spawn system
   m_Data: {fileID: 8926484042661615295}
   m_InputFlowSlot:
   - link: []
